@@ -16,12 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="flappy_file"
+run/main_scene="res://flappy_scene.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=300
 window/size/height=200
+window/size/test_width=600
+window/size/test_height=400
 window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
