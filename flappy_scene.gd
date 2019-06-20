@@ -12,7 +12,9 @@ func _ready():
 func player_collided():
 	if playing:
 		playing = false
-		Scores.best_score = int($character.travel_distance())
+		var score = int($character.travel_distance())
+		if score > Scores.best_score:
+			Scores.best_score = score
 		yield(get_tree().create_timer(4), 'timeout')
 		get_tree().reload_current_scene()
 
