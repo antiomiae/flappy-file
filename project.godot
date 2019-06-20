@@ -19,6 +19,10 @@ config/name="flappy_file"
 run/main_scene="res://flappy_scene.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Scores="*res://scores.gd"
+
 [display]
 
 window/size/width=300
